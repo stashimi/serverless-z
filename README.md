@@ -131,9 +131,16 @@ These consultants use the Serverless Framework and can help you build your serve
 
 ## Release History
 
+### 0.6.4
+* Fixed an issue with the NPM being checked in using CRLF :roll_eyes:
+* Fixed a problem with API Gateway not being able to test invoke Lambda functions using AWS_PROXY and ANY method
+
 ### 0.6.3
 * Fixed deployment error on empty or invalid VPC configuration (issue #6)
 * Use native AWS Lambda environment variables instead of injected ones (issue #5)
+
+### 0.6.2
+* Fixed a problem with API Gateway not being able to test invoke Lambda functions anymore
 
 ### 0.6.1
 * Changed the way Serverless sets up scheduled events: Instead of creating one rule per function
