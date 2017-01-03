@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stashimi/serverless"
+    "url": "https://github.com/stashimi/serverless-z"
   },
   "keywords": [
     "serverless",
