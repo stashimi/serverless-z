@@ -131,6 +131,9 @@ These consultants use the Serverless Framework and can help you build your serve
 
 ## Release History
 
+### 0.6.6
+* Fixed a problem with an outdated AWS-SDK being installed with the previous release
+
 ### 0.6.5
 * Fixed a problem with loading of NPM modules as plugins in case an exception occurs
 
