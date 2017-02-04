@@ -77,10 +77,10 @@ Serverless Projects are shareable and installable.  You can publish them to npm 
 * [serverless-graphql](https://github.com/serverless/serverless-graphql) - Official Serverless boilerplate to kick start your project
 * [serverless-starter](https://github.com/serverless/serverless-starter) - A simple boilerplate for new projects with a few architectural options
 * [serverless-graphql-blog](https://github.com/serverless/serverless-graphql-blog) - A blog boilerplate that leverages GraphQL in front of DynamoDB to offer a minimal REST API featuring only 1 endpoint
-* [serverless-authentication-boilerplate](https://github.com/laardee/serverless-authentication-boilerplate) - A generic authentication boilerplate for Serverless framework 
+* [serverless-authentication-boilerplate](https://github.com/laardee/serverless-authentication-boilerplate) - A generic authentication boilerplate for Serverless framework
 * [sc5-serverless-boilerplate](https://github.com/SC5/sc5-serverless-boilerplate) - A boilerplate for test driven development of REST endpoints
 * [MoonMail] (https://github.com/microapps/MoonMail) - Build your own email marketing infrastructure using Lambda + SES
-    
+
 ## Plugins
 Serverless is composed of Plugins.  A group of default Plugins ship with the Framework, and here are some others you can add to improve/help your workflow:
 * [Meta Sync](https://github.com/serverless/serverless-meta-sync) - Securely sync your the variables in your project's `_meta/variables` across your team.
@@ -131,6 +131,9 @@ These consultants use the Serverless Framework and can help you build your serve
 
 ## Release History
 
+### 0.6.5
+* Fixed a problem with loading of NPM modules as plugins in case an exception occurs
+
 ### 0.6.4
 * Fixed an issue with the NPM being checked in using CRLF :roll_eyes:
 * Fixed a problem with API Gateway not being able to test invoke Lambda functions using AWS_PROXY and ANY method
@@ -146,7 +149,7 @@ These consultants use the Serverless Framework and can help you build your serve
 * Changed the way Serverless sets up scheduled events: Instead of creating one rule per function
   it is now possible to create a single rule that triggers up to 5 Lambdas simultaneously. Simply
   reuse the schedule name between your Lambda functions to make use of this feature.
-* Due to some internal changes on how triggers are deployed, we recommend to delete your Lambda 
+* Due to some internal changes on how triggers are deployed, we recommend to delete your Lambda
   stages and re-deploy everything after upgrading to this version.
 
 ### 0.6.0
