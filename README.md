@@ -131,6 +131,9 @@ These consultants use the Serverless Framework and can help you build your serve
 
 ## Release History
 
+### 0.6.7
+* Added support for Node.js 6.10 runtime
+
 ### 0.6.6
 * Fixed a problem with an outdated AWS-SDK being installed with the previous release
 
